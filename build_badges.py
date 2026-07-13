@@ -12,8 +12,8 @@ Slate outer band carries two arcs of ring text.
 from pathlib import Path
 
 ROOT = Path(__file__).parent
-MARK = (ROOT / "assets" / "mark-datauri.txt").read_text().strip()      # 57x60
-WORDMARK = (ROOT / "assets" / "wordmark-datauri.txt").read_text().strip()  # 290x60
+MARK = (ROOT / "assets" / "mark-datauri.txt").read_text().strip()      # 63x68
+WORDMARK = (ROOT / "assets" / "wordmark-datauri.txt").read_text().strip()  # 331x47
 
 SLATE = "#19262F"
 SLATE_LIGHT = "#243542"
@@ -56,8 +56,8 @@ def badge(accent_edge: str, accent_ring: str, bottom_text_fill: str,
   <!-- white center disc: green Capsim mark as focal point, wordmark beneath -->
   <circle cx="200" cy="200" r="136" fill="#ffffff"/>
   <circle cx="200" cy="200" r="136" fill="none" stroke="{accent_ring}" stroke-width="4"/>
-  <image {centered(mark_w, 57, 60, mark_y)} xlink:href="{MARK}"/>
-  <image {centered(word_w, 290, 60, word_y)} xlink:href="{WORDMARK}"/>
+  <image {centered(mark_w, 63, 68, mark_y)} xlink:href="{MARK}"/>
+  <image {centered(word_w, 331, 47, word_y)} xlink:href="{WORDMARK}"/>
 {extra}
   <!-- ring text: program name on top, designation on bottom -->
   <text font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="bold" fill="#ffffff" letter-spacing="1.5">
@@ -87,14 +87,14 @@ participation = badge(
     accent_edge=BLUE, accent_ring=BLUE,
     bottom_text_fill="#ffffff",
     label="PARTICIPANT", label_spacing=6,
-    mark_w=95, mark_y=126, word_w=150, word_y=244,
+    mark_w=97, mark_y=124, word_w=190, word_y=250,
 )
 
 first_place = badge(
     accent_edge="url(#goldGrad)", accent_ring=GOLD,
     bottom_text_fill=GOLD_LIGHT,
     label="FIRST PLACE TEAM", label_spacing=4,
-    mark_w=82, mark_y=146, word_w=140, word_y=250,
+    mark_w=84, mark_y=150, word_w=175, word_y=256,
     extra=GOLD_STARS,
 )
 
