@@ -109,7 +109,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 </style>
 </head>
 <body>
-<div class="band"><img src="../assets/capsim-logo-white.svg" alt="Capsim"></div>
+<div class="band"><img src="../assets/capsim-wordmark.png" alt="Capsim"></div>
 <div class="card">
   <img class="badge-img" src="{image}" alt="{title} badge">
   <div class="issuer">{issuer}</div>
