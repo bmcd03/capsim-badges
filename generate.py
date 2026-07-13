@@ -98,6 +98,9 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     padding: 13px 26px; border-radius: 28px;
   }}
   .li-btn:hover {{ background: #084d92; }}
+  .site-link {{ margin-top: 16px; }}
+  .site-link a {{ color: var(--red); font-weight: 600; font-size: 15px; text-decoration: none; }}
+  .site-link a:hover {{ text-decoration: underline; }}
   .about {{
     max-width: 680px; margin: 0 auto 60px; text-align: center;
     font-size: 14px; color: #5a6172; padding: 0 24px;
@@ -120,6 +123,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     <div><div class="k">Issued</div><div class="v">{issued}</div></div>
   </div>
   <a class="li-btn" href="{li_url}" target="_blank" rel="noopener">Add to LinkedIn profile</a>
+  <div class="site-link"><a href="https://www.capsim.com">www.capsim.com</a></div>
 </div>
 <p class="about">
   The Capstone Business Simulation by <a href="https://www.capsim.com">Capsim</a> puts student
